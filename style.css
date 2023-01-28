@@ -13,3 +13,7 @@ body {
 .mdl-textfield {
   min-width: 95%;
 }
+
+.mdl-button {
+  background-color: rgb(100, 206, 206);
+}
