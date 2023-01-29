@@ -4,7 +4,6 @@ let dictionary = {
 };
 
 function addWord() {
-  dictionary["Hallo"] = "hi";
-  alert(dictionary["Hallo"]);
+  dictionary[germanText.value] = englishText.value;
 
 }
