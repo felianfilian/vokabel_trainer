@@ -1,8 +1,10 @@
 let dictionary = {
-  Hallo: "hello",
-  Freund: "friend",
+  "Hallo": "hello",
+  "Freund": "friend",
 };
 
 function addWord() {
-  alert("New Word");
+  dictionary["Hallo"] = "hi";
+  alert(dictionary["Hallo"]);
+
 }
