@@ -9,3 +9,5 @@ function addWord() {
   germanText.value = "";
   englishText.value = "";
 }
+
+console.log(localStorage.getItem("dictionary"));
