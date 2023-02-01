@@ -5,5 +5,6 @@ let dictionary = {
 
 function addWord() {
   dictionary[germanText.value] = englishText.value;
-
+  germanText.value = "";
+  englishText.value = "";
 }
