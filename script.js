@@ -1,4 +1,3 @@
-localStorage.removeItem("dictionary");
 let dictionary = JSON.parse(localStorage.getItem("dictionary")) || {};
 
 function addWord() {
@@ -6,6 +5,10 @@ function addWord() {
   localStorage.setItem("dictionary", JSON.stringify(dictionary));
   germanText.value = "";
   englishText.value = "";
+}
+
+function resetDictionary() {
+  localStorage.removeItem("dictionary");
 }
 
 console.log(localStorage.getItem("dictionary"));
