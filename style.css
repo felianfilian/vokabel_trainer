@@ -2,6 +2,10 @@ body {
   background-color: rgb(220, 227, 234);
 }
 
+li {
+  list-style-type: none;
+}
+
 form {
   margin: 10px;
   width: 100%;

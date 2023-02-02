@@ -11,4 +11,10 @@ function resetDictionary() {
   localStorage.removeItem("dictionary");
 }
 
+function showWords() {
+  vocabularyList.innerHTML += "<li>test</li>";
+}
+
+showWords();
+
 console.log(localStorage.getItem("dictionary"));
