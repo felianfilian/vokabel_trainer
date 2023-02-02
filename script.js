@@ -1,3 +1,4 @@
+localStorage.removeItem("dictionary");
 let dictionary = JSON.parse(localStorage.getItem("dictionary")) || {};
 
 function addWord() {
