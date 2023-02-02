@@ -1,7 +1,4 @@
-let dictionary = {
-  "Hallo": "hello",
-  "Freund": "friend",
-};
+let dictionary = JSON.parse(localStorage.getItem("dictionary")) || {};
 
 function addWord() {
   dictionary[germanText.value] = englishText.value;
