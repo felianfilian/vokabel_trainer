@@ -5,6 +5,7 @@ function addWord() {
   localStorage.setItem("dictionary", JSON.stringify(dictionary));
   germanText.value = "";
   englishText.value = "";
+  showWords();
 }
 
 function resetDictionary() {
@@ -16,7 +17,5 @@ function showWords() {
     vocabularyList.innerHTML += `<li>${key} - ${dictionary[key]}</li>`;
   }
 }
-
-showWords();
 
 console.log(localStorage.getItem("dictionary"));
