@@ -13,7 +13,7 @@ function resetDictionary() {
 
 function showWords() {
   for(let key in dictionary){
-    vocabularyList.innerHTML += `<li>${key}</li>`;
+    vocabularyList.innerHTML += `<li>${key} - ${dictionary[key]}</li>`;
   }
 }
 
