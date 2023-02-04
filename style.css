@@ -4,10 +4,15 @@ body {
 
 li {
   list-style-type: none;
+  font-size: 20px;
 }
 
 form {
   margin: 10px;
+  width: 100%;
+}
+
+#vocabularyList {
   width: 100%;
 }
 
