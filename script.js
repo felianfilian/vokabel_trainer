@@ -12,7 +12,11 @@ function resetDictionary() {
 }
 
 function showWords() {
-  vocabularyList.innerHTML += "<li>test</li>";
+  let word = "hello"
+  for(let key in dictionary){
+    vocabularyList.innerHTML += `<li>${key}</li>`;
+  }
+  vocabularyList.innerHTML += `<li>${word}</li>`;
 }
 
 showWords();
