@@ -19,4 +19,9 @@ function showWords() {
   }
 }
 
+function nextVocabulary() {
+  // get random word
+  
+}
+
 console.log(localStorage.getItem("dictionary"));
