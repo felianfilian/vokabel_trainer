@@ -1,5 +1,7 @@
 let dictionary = JSON.parse(localStorage.getItem("dictionary")) || {};
 
+let randomGermanWord;
+
 function addWord() {
   dictionary[germanText.value] = englishText.value;
   localStorage.setItem("dictionary", JSON.stringify(dictionary));
@@ -22,13 +24,18 @@ function showWords() {
 function nextVocabulary() {
   // get random word
   let wordKeys = Object.keys(dictionary);
-  let randomGermanWord = wordKeys[Math.floor(Math.random() * wordKeys.length)];
+  randomGermanWord = wordKeys[Math.floor(Math.random() * wordKeys.length)];
   word.innerHTML = `${dictionary[randomGermanWord]}`;
 }
 
 function compare() {
+  console.log(dictionary[germanText.value]);
+  console.log(randomGermanWord);
   if(dictionary[germanText.value] == randomGermanWord) {
     console.log("YES");
+  }
+  else{
+    //wrong
   }
 }
 
