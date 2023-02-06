@@ -26,4 +26,10 @@ function nextVocabulary() {
   word.innerHTML = `${dictionary[randomGermanWord]}`;
 }
 
+function compare() {
+  if(dictionary[germanText.value] == randomGermanWord) {
+    console.log("YES");
+  }
+}
+
 console.log(localStorage.getItem("dictionary"));
