@@ -23,7 +23,7 @@ function nextVocabulary() {
   // get random word
   let wordKeys = Object.keys(dictionary);
   let randomGermanWord = wordKeys[Math.floor(Math.random() * wordKeys.length)];
-  word.innerHTML = `${randomGermanWord}`;
+  word.innerHTML = `${dictionary[randomGermanWord]}`;
 }
 
 console.log(localStorage.getItem("dictionary"));
