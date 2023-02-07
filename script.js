@@ -30,11 +30,12 @@ function nextVocabulary() {
 
 function compare() {
   if(germanText.value.toLowerCase() == randomGermanWord.toLowerCase()) {
-    console.log("YES");
+    checkText.innerHTML = "That is RIGHT";
   }
   else{
-    console.log("NO")
+    checkText.innerHTML = "OH NO is WRONG";
   }
+  germanText.value = "";
   nextVocabulary();
 }
 
