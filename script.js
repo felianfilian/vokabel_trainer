@@ -29,14 +29,13 @@ function nextVocabulary() {
 }
 
 function compare() {
-  console.log(germanText.value);
-  console.log(dictionary[germanText.value])
-  if(dictionary[germanText.value] == randomGermanWord) {
+  if(germanText.value.toLowerCase() == randomGermanWord) {
     console.log("YES");
   }
   else{
-    //wrong
+    console.log("NO")
   }
+  nextVocabulary();
 }
 
 console.log(localStorage.getItem("dictionary"));
