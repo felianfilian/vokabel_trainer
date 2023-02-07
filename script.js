@@ -29,8 +29,8 @@ function nextVocabulary() {
 }
 
 function compare() {
-  console.log(dictionary[germanText.value]);
-  console.log(randomGermanWord);
+  console.log(germanText.value);
+  console.log(dictionary[germanText.value])
   if(dictionary[germanText.value] == randomGermanWord) {
     console.log("YES");
   }
