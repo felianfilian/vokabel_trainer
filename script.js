@@ -29,7 +29,7 @@ function nextVocabulary() {
 }
 
 function compare() {
-  if(germanText.value.toLowerCase() == randomGermanWord) {
+  if(germanText.value.toLowerCase() == randomGermanWord.toLowerCase()) {
     console.log("YES");
   }
   else{
