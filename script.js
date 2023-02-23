@@ -16,23 +16,26 @@ function resetDictionary() {
 
 function showWords() {
   vocabularyList.innerHTML = "";
-  for(let key in dictionary){
+  for (let key in dictionary) {
     vocabularyList.innerHTML += `<li>${key} - ${dictionary[key]}</li>`;
   }
 }
 
 function nextVocabulary() {
   // get random word
-  let wordKeys = Object.keys(dictionary);
-  randomGermanWord = wordKeys[Math.floor(Math.random() * wordKeys.length)];
-  word.innerHTML = `${dictionary[randomGermanWord]}`;
+  if (Object.keys(dictionary) != null) {
+    let wordKeys = Object.keys(dictionary);
+    randomGermanWord = wordKeys[Math.floor(Math.random() * wordKeys.length)];
+    word.innerHTML = `${dictionary[randomGermanWord]}`;
+  } else {
+    word.innerHTML = `No Word in dictionary`;
+  }
 }
 
 function compare() {
-  if(germanText.value.toLowerCase() == randomGermanWord.toLowerCase()) {
+  if (germanText.value.toLowerCase() == randomGermanWord.toLowerCase()) {
     checkText.innerHTML = "That is RIGHT";
-  }
-  else{
+  } else {
     checkText.innerHTML = "OH NO is WRONG";
   }
   germanText.value = "";
