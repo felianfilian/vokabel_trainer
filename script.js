@@ -23,7 +23,8 @@ function showWords() {
 
 function nextVocabulary() {
   // get random word
-  if (Object.keys(dictionary) != null) {
+  //console.log("dic: " + Object.keys(dictionary));
+  if (Object.keys(dictionary) != "") {
     let wordKeys = Object.keys(dictionary);
     randomGermanWord = wordKeys[Math.floor(Math.random() * wordKeys.length)];
     word.innerHTML = `${dictionary[randomGermanWord]}`;
